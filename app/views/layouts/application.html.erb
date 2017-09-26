@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>OnlineCv</title>
+    <%= csrf_meta_tags %>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" />
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <div class="navbar">
+      <div class="navbox"><%=link_to 'home', root_path%></div>
+      <div class="navbox"> <%= link_to 'about me', '#' %></div>
+      <div class="navbox"> <%= link_to 'my story', '#' %></div>
+      <div class="navbox"> <%= link_to 'my story', '#' %></div>
+
+      <div class="navbox-social"></div>
+    </div>
+    <div class="container">
+      <%= yield %>
+    </div>
+  </body>
+</html>

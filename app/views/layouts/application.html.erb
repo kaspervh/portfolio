@@ -10,12 +10,19 @@
 
   <body>
     <div class="navbar">
-      <div class="navbox"><%=link_to 'home', root_path%></div>
-      <div class="navbox"> <%= link_to 'about me', '#' %></div>
-      <div class="navbox"> <%= link_to 'my story', '#' %></div>
-      <div class="navbox"> <%= link_to 'my story', '#' %></div>
+      <div class="nav-left">
+        <ul>
+          <li><%=link_to 'home ', root_path%></li>
+          <li><%=link_to 'langt navn ', root_path%></li>
+          <li><%=link_to 'endnu længere navn ', root_path%></li>
+          <li><%=link_to 'something ', root_path%></li>
+          <li><%=link_to 'someone ', root_path%></li>
+          <li><%=link_to 'somehow ', root_path%></li>
 
-      <div class="navbox-social"></div>
+
+
+        </ul>
+      </div>
     </div>
     <div class="container">
       <%= yield %>

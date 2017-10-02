@@ -10,19 +10,15 @@
 
   <body>
     <div class="navbar">
-      <div class="nav-left">
-        <ul>
-          <li><%=link_to 'home ', root_path%></li>
-          <li><%=link_to 'langt navn ', root_path%></li>
-          <li><%=link_to 'endnu længere navn ', root_path%></li>
-          <li><%=link_to 'something ', root_path%></li>
-          <li><%=link_to 'someone ', root_path%></li>
-          <li><%=link_to 'somehow ', root_path%></li>
-
-
-
-        </ul>
-      </div>
+      <input type="checkbox" id="">
+      <ul>
+        <li><%=link_to 'home ', root_path%></li>
+        <li><%=link_to 'langt navn ', root_path%></li>
+        <li><%=link_to 'endnu længere navn ', root_path%></li>
+        <li><%=link_to 'something ', root_path%></li>
+        <li><%=link_to 'someone ', root_path%></li>
+        <li><%=link_to 'somehow ', root_path%></li>
+      </ul>
     </div>
     <div class="container">
       <%= yield %>

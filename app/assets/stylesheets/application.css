@@ -2,6 +2,9 @@
   width: 100%;
   height: 50px;
   background-color: #333;
+  display: flex;
+  align-items: center;
+  position: relative;
 }
 
 .navbar ul{
@@ -31,33 +34,57 @@
 }
 
 .navbar #navbar-more{
-  visibility: hidden;
+  display: none;
+  background-color: #333;
+
 }
 
 label{
-  height: 50px;
-  min-width: 50px;
+  visibility: hidden;
   background-color: #333;
+  font-size: 20px;
+  color: white;
   display: block;
+  position: absolute;
+  right: 0;
+  margin-right: 20px;
+  margin-left: 10px;
 }
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 900px){
 
-   .navbar ul{
+  .navbar ul{
       visibility: hidden;
-      transition: transf
     }
 
-    .navbar ul li{
-      height: 50px;
-      width: 100%;
-      background-color: #333;
-    }
+  .navbar #navbar-more{
+    visibility: visible;
+  }
 
-    .navbar input:checked + ul{
-      visibility: visible;
-      flex-direction: column;
-    }
+  label{
+    visibility: visible;
+    align-content: flex-end;
+  }
+
+  .navbar input{
+    visibility: hidden;
+  }
+
+  .navbar ul li{
+    height: 50px;
+    width: 80%;
+    background-color: #333;
+
+  }
+
+  .navbar input:checked + ul{
+    flex-direction: column;
+    visibility: visible;
+  }
+
 }
 
-.container {}
+.container {
+  height: 100%;
+  width: 100%;
+}

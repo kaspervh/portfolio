@@ -10,7 +10,8 @@
 
   <body>
     <div class="navbar">
-      <input type="checkbox" id="">
+      <label for="navbar-more">More</label>
+      <input type="checkbox" id="navbar-more">
       <ul>
         <li><%=link_to 'home ', root_path%></li>
         <li><%=link_to 'langt navn ', root_path%></li>
@@ -20,6 +21,8 @@
         <li><%=link_to 'somehow ', root_path%></li>
       </ul>
     </div>
+
+
     <div class="container">
       <%= yield %>
     </div>

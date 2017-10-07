@@ -1,91 +1,16 @@
-body{
-  height: 100%;
-  width: 100%;
-}
-.navbar{
-  width: 100%;
-  height: 50px;
-  background-color: #333;
-  display: flex;
-  align-items: center;
-  position: relative;
-}
-
-.navbar ul{
-  width: 100%;
-  background-color: #333;
-  height: 50px;
-  display: flex;
-  align-items: center;
-}
-
-.navbar li{
-  border-right: 1px solid black;
-  min-width: 6%;
-}
-
-.navbar li a {
-  text-decoration: none;
-  font-size: 20px;
-  color: white;
-  display: block;
-  text-align: center;
-  padding: 10px 20px;
-}
-
-.navbar li a:hover{
-  background-color: black;
-}
-
-.navbar #navbar-more{
-  display: none;
-  background-color: #333;
-}
-
-label{
-  visibility: hidden;
-  background-color: #333;
-  font-size: 20px;
-  color: white;
-  display: block;
-  position: absolute;
-  right: 0;
-  margin-right: 20px;
-  margin-left: 10px;
-}
-
-@media screen and (max-width: 900px){
-  .navbar ul{
-      visibility: hidden;
-    }
-
-  .navbar #navbar-more{
-    visibility: visible;
-  }
-
-  label{
-    visibility: visible;
-    align-content: flex-end;
-  }
-
-  .navbar input{
-    visibility: hidden;
-  }
-
-  .navbar ul li{
-    height: 50px;
-    width: 60%;
-    background-color: #333;
-  }
-
-  .navbar input:checked + ul{
-    flex-direction: column;
-    visibility: visible;
-  }
-
-}
-
-.container {
-  height: 100%;
-  width: 100%;
-}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require body
+ *= require navbar
+ *= require home
+ *= require container
+ */

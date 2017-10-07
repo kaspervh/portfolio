@@ -1,3 +1,55 @@
-// Place all the styles related to the home controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.container .banner{
+  width: 100%;
+  height: 400px;
+  background-color: blue;
+  position: absolute;
+}
+
+.banner img{
+  width: 100%;
+  height: 400px;
+}
+
+.container .projectbox{
+  width: 50%;
+  height: 330px;
+  z-index: 1;
+  position: relative;
+  top: 250px;
+  display: flex;
+  justify-content: space-evenly;
+  transition: all 2s;
+}
+
+.projectbox .background{
+  height: 330px;
+  width: 33%;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  align-items: center;
+}
+
+.background h1{
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.background .bottom-foreground{
+  width: 100%;
+  height: 20px;
+  align-self: flex-end;
+  transition: all 1.5s;
+  position: relative;
+  top: 20px;
+}
+
+.background:hover .bottom-foreground{
+  height: 280px;
+}
+
+
+
+

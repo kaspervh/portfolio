@@ -154,7 +154,7 @@
 }
 
 .pc-screen:before{
-  content: "Klik på skærmen for mere.";
+  content: "Klik her for mere.";
   display: block;
   height: 150px;
   width: 300px;
@@ -228,27 +228,20 @@
   62%{content: "Kli"}
   63%{content: "Klik"}
   64%{content: "Klik "}
-  65%{content: "Klik p"}
-  66%{content: "Klik på"}
-  67%{content: "Klik på "}
-  68%{content: "Klik på s"}
-  69%{content: "Klik på sk"}
-  70%{content: "Klik på skæ"}
-  71%{content: "Klik på skær"}
-  72%{content: "Klik på skærm"}
-  73%{content: "Klik på skærme"}
-  74%{content: "Klik på skærmen"}
-  75%{content: "Klik på skærmen "}
-  76%{content: "Klik på skærmen f"}
-  77%{content: "Klik på skærmen fo"}
-  78%{content: "Klik på skærmen for"}
-  79%{content: "Klik på skærmen for "}
-  80%{content: "Klik på skærmen for m"}
-  81%{content: "Klik på skærmen for me"}
-  82%{content: "Klik på skærmen for mer"}
-  83%{content: "Klik på skærmen for mere"}
-  84%{content: "Klik på skærmen for mere."}
-  100%{content: "Klik på skærmen for mere."}
+  65%{content: "Klik h"}
+  66%{content: "Klik he"}
+  67%{content: "Klik her"}
+  68%{content: "Klik her "}
+  69%{content: "Klik her f"}
+  70%{content: "Klik her fo"}
+  71%{content: "Klik her for"}
+  72%{content: "Klik her for "}
+  73%{content: "Klik her for m"}
+  74%{content: "Klik her for me"}
+  75%{content: "Klik her for mer"}
+  76%{content: "Klik her for mere"}
+  77%{content: "Klik her for mere."}
+  100%{content: "Klik her for mere."}
 }
 
 .pc-leg{
@@ -270,7 +263,7 @@
 
 .pc-tower{
   height: 180px;
-  width: 100px;
+  min-width: 100px;
   background-color: black;
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;

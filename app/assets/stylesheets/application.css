@@ -12,5 +12,9 @@
  *= require body
  *= require navbar
  *= require home
+ *= require css-models-pc-screen
+ *= require css-models-cup
+ *= require css-models-pc-tower
+ *= require css-models-smartphone
  *= require container
  */

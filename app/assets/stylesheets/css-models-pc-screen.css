@@ -1,0 +1,122 @@
+.screen-box{
+  width: 350px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.screen-box .pc-screen{
+  height: 150px;
+  width: 300px;
+  background-color: #333;
+  border: 20px solid black;
+  border-radius: 25px;
+}
+
+.screen-box .pc-screen:before{
+  content: "Klik her for mere.";
+  display: block;
+  height: 150px;
+  width: 300px;
+  background-color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  color: white;
+  animation: screen 30s;
+}
+
+@keyframes screen{
+  0%{content: "H";}
+  4%{content: "He";}
+  8%{content: "Hej"}
+  10%{content: "Hej.";}
+
+  11%{content: "J";}
+  12%{content: "Je";}
+  13%{content: "Jeg"}
+  14%{content: "Jeg "}
+  15%{content: "Jeg h"}
+  16%{content: "Jeg he"}
+  17%{content: "Jeg hed"}
+  18%{content: "Jeg hedd"}
+  19%{content: "Jeg hedde"}
+  20%{content: "Jeg hedder"}
+  21%{content: "Jeg hedder."}
+
+
+  22%{content: "K"}
+  23%{content: "Ka"}
+  24%{content: "Kas"}
+  25%{content: "Kasp"}
+  26%{content: "Kaspe"}
+  27%{content: "Kasper"}
+  28%{content: "Kasper "}
+  29%{content: "Kasper H"}
+  30%{content: "Kasper Ha"}
+  31%{content: "Kasper Hau"}
+  32%{content: "Kasper Haus"}
+  33%{content: "Kasper Hausch"}
+  34%{content: "Kasper Hauschi"}
+  35%{content: "Kasper Hauschil"}
+  36%{content: "Kasper Hauschild"}
+  37%{content: "Kasper Hauschildt"}
+  38%{content: "Kasper Hauschildt."}
+
+  40%{content: "J";}
+  41%{content: "Je";}
+  42%{content: "Jeg";}
+  43%{content: "Jeg e"}
+  44%{content: "Jeg er"}
+  45%{content: "Jeg er "}
+  46%{content: "Jeg er w"}
+  47%{content: "Jeg er we"}
+  48%{content: "Jeg er web"}
+  49%{content: "Jeg er web "}
+  50%{content: "Jeg er web u"}
+  51%{content: "Jeg er web ud"}
+  52%{content: "Jeg er web udv"}
+  53%{content: "Jeg er web udvi"}
+  54%{content: "Jeg er web udvik"}
+  55%{content: "Jeg er web udvikl"}
+  56%{content: "Jeg er web udvikler"}
+  57%{content: "Jeg er web udvikler."}
+
+  60%{content: "K"}
+  61%{content: "Kl"}
+  62%{content: "Kli"}
+  63%{content: "Klik"}
+  64%{content: "Klik "}
+  65%{content: "Klik h"}
+  66%{content: "Klik he"}
+  67%{content: "Klik her"}
+  68%{content: "Klik her "}
+  69%{content: "Klik her f"}
+  70%{content: "Klik her fo"}
+  71%{content: "Klik her for"}
+  72%{content: "Klik her for "}
+  73%{content: "Klik her for m"}
+  74%{content: "Klik her for me"}
+  75%{content: "Klik her for mer"}
+  76%{content: "Klik her for mere"}
+  77%{content: "Klik her for mere."}
+  100%{content: "Klik her for mere."}
+}
+
+.screen-box .pc-leg{
+  height:30px;
+  width: 70px;
+  background-color: black;
+  position: relative;
+}
+
+.screen-box .pc-foot{
+  height: 10px;
+  width: 200px;
+  background-color: black;
+  border-top-right-radius: 25%;
+  border-top-left-radius: 25%;
+}

@@ -8,8 +8,7 @@
 }
 
 @media screen and (min-width: 800px){
-  .smartphone-background{ visibility: hidden; }
-
+    .smartphone-background{ visibility: hidden; }
 }
 
 
@@ -24,6 +23,4 @@
     .screen-box label{ visibility: hidden;}
 
     .table{ visibility: hidden; }
-
-
 }

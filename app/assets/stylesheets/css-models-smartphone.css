@@ -47,6 +47,96 @@
   margin-bottom: 5px;
 }
 
+.smartphone-background .screen:before{
+  content: "Tryk her for mere.";
+  display: block;
+  height: 200px;
+  width: 95%;
+  background-color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  color: white;
+  animation: smartphonescreen 30s;
+}
+
+@keyframes smartphonescreen{
+  0%{content: "H";}
+  4%{content: "He";}
+  8%{content: "Hej"}
+  10%{content: "Hej.";}
+
+  11%{content: "J";}
+  12%{content: "Je";}
+  13%{content: "Jeg"}
+  14%{content: "Jeg "}
+  15%{content: "Jeg h"}
+  16%{content: "Jeg he"}
+  17%{content: "Jeg hed"}
+  18%{content: "Jeg hedd"}
+  19%{content: "Jeg hedde"}
+  20%{content: "Jeg hedder"}
+  21%{content: "Jeg hedder."}
+
+  22%{content: "K"}
+  23%{content: "Ka"}
+  24%{content: "Kas"}
+  25%{content: "Kasp"}
+  26%{content: "Kaspe"}
+  27%{content: "Kasper"}
+  28%{content: "Kasper "}
+  29%{content: "Kasper H"}
+  30%{content: "Kasper Ha"}
+  31%{content: "Kasper Hau"}
+  32%{content: "Kasper Haus"}
+  33%{content: "Kasper Hausch"}
+  34%{content: "Kasper Hauschi"}
+  35%{content: "Kasper Hauschil"}
+  36%{content: "Kasper Hauschild"}
+  37%{content: "Kasper Hauschildt"}
+  38%{content: "Kasper Hauschildt."}
+
+  40%{content: "J";}
+  41%{content: "Je";}
+  42%{content: "Jeg";}
+  43%{content: "Jeg e"}
+  44%{content: "Jeg er"}
+  45%{content: "Jeg er "}
+  46%{content: "Jeg er w"}
+  47%{content: "Jeg er we"}
+  48%{content: "Jeg er web"}
+  49%{content: "Jeg er web "}
+  50%{content: "Jeg er web u"}
+  51%{content: "Jeg er web ud"}
+  52%{content: "Jeg er web udv"}
+  53%{content: "Jeg er web udvi"}
+  54%{content: "Jeg er web udvik"}
+  55%{content: "Jeg er web udvikl"}
+  56%{content: "Jeg er web udvikler"}
+  57%{content: "Jeg er web udvikler."}
+
+  60%{content: "T"}
+  61%{content: "Tr"}
+  62%{content: "Try"}
+  63%{content: "Tryk"}
+  64%{content: "Tryk "}
+  65%{content: "Tryk h"}
+  66%{content: "Tryk he"}
+  67%{content: "Tryk her"}
+  68%{content: "Tryk her "}
+  69%{content: "Tryk her f"}
+  70%{content: "Tryk her fo"}
+  71%{content: "Tryk her for"}
+  72%{content: "Tryk her for "}
+  73%{content: "Tryk her for m"}
+  74%{content: "Tryk her for me"}
+  75%{content: "Tryk her for mer"}
+  76%{content: "Tryk her for mere"}
+  77%{content: "Tryk her for mere."}
+  100%{content: "Tryk her for mere."}
+}
+
 .smartphone-background .home-button{
   height: 30px;
   width: 30px;

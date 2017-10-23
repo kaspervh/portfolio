@@ -13,6 +13,8 @@
   box-shadow:   1px 1px 1px #999,
                 2px 2px 2px #999,
                 3px 3px 2px #999;
+  position: absolute;
+  bottom: 100px;
 }
 
 .smartphone-background .peripial-box{
@@ -45,6 +47,9 @@
   height: 200px;
   background-color: #333;
   margin-bottom: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .smartphone-background .screen:before{
@@ -59,6 +64,14 @@
   font-size: 15px;
   color: white;
   animation: smartphonescreen 30s;
+}
+
+.screen a{
+  display: block;
+  width: 90%;
+  height: 200px;
+  position: absolute;
+  color: #333;
 }
 
 @keyframes smartphonescreen{

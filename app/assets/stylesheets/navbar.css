@@ -18,10 +18,13 @@
 .navbar li{
   border-right: 1px solid black;
   min-width: 6%;
+  height: 50px;
 }
 
 .navbar li a {
   text-decoration: none;
+  flex: 1;
+  height: 30px;
   font-size: 20px;
   color: white;
   display: block;

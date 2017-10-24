@@ -1,15 +1,17 @@
 .container {
-  height: 100%;
+  min-height: 100vh;
   min-width: 100%;
   display: flex;
   justify-content: center;
+  background-color: orange;
 }
 
 .container-center{
   width: 60%;
   justify-content: center;
-  border-right: 1px solid black;
-  border-left: 1px solid black;
+  box-shadow: 0px 0px 10px  15px rgba(0,0,0,.4);
+  background-color: white;
+  padding: 20px;
 }
 
 .container-center h1{

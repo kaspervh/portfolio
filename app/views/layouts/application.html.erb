@@ -24,14 +24,16 @@
       <ul>
         <li><%=link_to 'Home ', root_path%></li>
         <li><%=link_to 'Om mig', home_about_me_path %></li>
-        <li><%=link_to 'Arbejds erfaring', root_path%></li>
+        <li><%=link_to 'Arbejds erfaring', work_exps_path%></li>
         <li><%=link_to 'Uddanelse', root_path%></li>
       </ul>
     </div>
 
 
     <div class="container">
-      <%= yield %>
+      <div class="container-center">
+        <%= yield %>
+      </div>
     </div>
   </body>
 </html>

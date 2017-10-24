@@ -1,0 +1,32 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Work Exps</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Year</th>
+      <th>Name</th>
+      <th>Description</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @work_exps.each do |work_exp| %>
+      <tr>
+        <td><%= work_exp.year %></td>
+
+        <td><%= work_exp.name %></td>
+        <td><%= work_exp.description %></td>
+        <td><%= link_to 'Show', work_exp %></td>
+        <td><%= link_to 'Edit', edit_work_exp_path(work_exp) %></td>
+        <td><%= link_to 'Destroy', work_exp, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Work Exp', new_work_exp_path %>

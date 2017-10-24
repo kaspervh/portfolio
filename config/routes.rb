@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :work_exps
   get 'home/index'
 
   get 'home/about_me'

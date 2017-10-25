@@ -6,7 +6,7 @@
 <% @work_exps.each do |work_exp| %>
   <h2>
     <strong>År:</strong>
-    <p><%= work_exp.year.to_s.first(4) %></p>
+    <p><%= work_exp.year %></p>
   </h2>
   <br>
   <h2>
@@ -16,7 +16,7 @@
   <br>
   <h2>
     <strong>beskrivelse:</strong>
-    <p><%= work_exp.description.first(40)%>...</p>
+    <p><%= work_exp.description%>...</p>
   </h2>
   <br>
   <%=link_to "vis", work_exp %>

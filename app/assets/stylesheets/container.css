@@ -28,3 +28,44 @@
 .container-center p{
   margin-left: 20px;
 }
+
+.container-center strong{
+  font-size: 18px;
+  margin-left: 20px;
+}
+
+.container-center a{
+  display: block;
+  width: 50px;
+  background-color: #333;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 25px;
+}
+
+.container-center a:hover{
+  background-color: black;
+}
+
+.container-center a:click{
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+}
+
+.container-center .field{
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+.container-center .actions{
+  margin-left: 20px;
+}
+
+.container-center input{
+  width: 50%;
+}

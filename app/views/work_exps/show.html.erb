@@ -1,19 +1,12 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Year:</strong>
-  <%= @work_exp.year %>
-</p>
-
-<p>
-  <strong>Name:</strong>
-  <%= @work_exp.name %>
-</p>
-
-<p>
-  <strong>Description:</strong>
+<br>
+<br>
+  <h1><%=@work_exp.name%></h1>
+  <br>
+  <br>
   <%= @work_exp.description %>
-</p>
+<br>
+<br>
 
-<%= link_to 'Edit', edit_work_exp_path(@work_exp) %> |
-<%= link_to 'Back', work_exps_path %>
+<%= link_to 'Tilbage', work_exps_path %>

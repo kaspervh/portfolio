@@ -1,0 +1,30 @@
+<%= form_with(model: education, local: true) do |form| %>
+  <% if education.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(education.errors.count, "error") %> prohibited this education from being saved:</h2>
+
+      <ul>
+      <% education.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+
+  <strong>År:</strong>
+  <div class="field">
+    <%= form.number_field :year, id: :education_year %>
+  </div>
+
+  <strong>Skolens navn:</strong>
+  <div class="field">
+    <%= form.text_field :name, id: :education_name %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+  <br>
+  <br>
+<% end %>

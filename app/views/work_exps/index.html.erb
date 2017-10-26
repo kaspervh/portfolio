@@ -3,7 +3,7 @@
 <h1>Arbejds erfaring</h1>
 <br>
 <br>
-<% @work_exps.each do |work_exp| %>
+<% @work_exps.reverse_each do |work_exp| %>
   <h2>
     <strong>År:</strong>
     <p><%= work_exp.year %></p>
@@ -16,10 +16,8 @@
   <br>
   <h2>
     <strong>beskrivelse:</strong>
-    <p><%= work_exp.description%>...</p>
+    <p><%= work_exp.description%></p>
   </h2>
-  <br>
-  <%=link_to "vis", work_exp %>
   <br>
   <br>
 

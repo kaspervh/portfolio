@@ -13,7 +13,7 @@
   </thead>
 
   <tbody>
-    <% @educations.each do |education| %>
+    <% @educations.reverse_each do |education| %>
       <tr>
         <td><%= education.year %></td>
         <td><%= education.name %></td>

@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
+  resources :educations
   resources :work_exps
+
   get 'home/index'
 
   get 'home/about_me'

@@ -1,0 +1,27 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Uddanelse</h1>
+<br>
+<br>
+
+<table>
+  <thead>
+    <tr>
+      <th><strong>År:</strong></th>
+      <th><strong>Skole:</strong></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @educations.each do |education| %>
+      <tr>
+        <td><%= education.year %></td>
+        <td><%= education.name %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'Ny', new_education_path %>

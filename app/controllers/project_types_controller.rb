@@ -7,14 +7,15 @@ class ProjectTypesController < ApplicationController
     @project_types = ProjectType.all
   end
 
+    #Get /project-types/1
+  def show
+    # pulls the project where project-type-id epuals project-type.id
+    @projects = @project_type.projects
+  end
+
   # GET /project_types/new
   def new
     @project_type = ProjectType.new
-  end
-
-  #Get /project-types/1
-  def show
-
   end
 
   # GET /project_types/1/edit

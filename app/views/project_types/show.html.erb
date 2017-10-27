@@ -1,5 +1,18 @@
 <p id="notice"><%= notice %></p>
 
+<h1><%= @project_type.name%> projekter</h1>
+<br>
+<br>
 
-
-<%= link_to 'Tilbage', project_types_path %>
+<% @project_type.projects.each do |project| %>
+  <strong><%= project.name %></strong>
+  <br>
+  <br>
+  <%= image_tag(project.image.url, style: "height: 200px;")%>
+  <br>
+  <br>
+  <p><%= project.description %></p>
+  <br>
+  <br>
+  <br>
+<%end%>

@@ -22,7 +22,6 @@
 .container-center img{
   margin-left: 20px;
   margin-right: 20px;
-  float: left;
 }
 
 .container-center p{
@@ -104,9 +103,12 @@ td{
 
 td:last-of-type{
   border-right: none;
-
 }
 
+.style_image{
+  height: 200px;
+  width: 300px;
+}
 
 
 

@@ -1,7 +1,10 @@
 Rails.application.routes.draw do
+  resources :projects
   resources :project_types
   resources :educations
   resources :work_exps
+
+  resources :photos, only: [:new, :create, :index, :destroy]
 
   get 'home/index'
 

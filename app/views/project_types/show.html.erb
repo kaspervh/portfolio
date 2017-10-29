@@ -14,7 +14,9 @@
   <p><%= project.description %></p>
   <br>
   <% ProjectLink.where(project_id: project.id).each do |link|%>
-    <%= link_to link.name, link.link %>
+    <% if link.link != ""%>
+      <%= link_to link.name, link.link %>
+    <%end%>
   <%end%>
   <br>
 <%end%>

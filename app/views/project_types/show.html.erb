@@ -13,6 +13,8 @@
   <br>
   <p><%= project.description %></p>
   <br>
-  <br>
+  <% ProjectLink.where(project_id: project.id).each do |link|%>
+    <%= link_to link.name, link.link %>
+  <%end%>
   <br>
 <%end%>

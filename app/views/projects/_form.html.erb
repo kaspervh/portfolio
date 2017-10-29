@@ -31,7 +31,6 @@
     <%= form.text_area :description, id: :project_description, cols: '68', rows: '35' %>
   </div>
 
-  <% 3.times do %>
     <%= form.fields_for :project_links do |builder| %>
 
       <strong>link navn:</strong>
@@ -44,7 +43,6 @@
         <%= builder.text_field :link %>
       </div>
     <%end%>
-  <%end%>
 
   <div class="actions">
     <%= form.submit %>

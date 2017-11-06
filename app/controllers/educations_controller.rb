@@ -8,6 +8,11 @@ class EducationsController < ApplicationController
     @educations = Education.all
   end
 
+  # GET /educations/1
+  # GET /educations/1.json
+  def show
+  end
+
   # GET /educations/new
   def new
     @education = Education.new

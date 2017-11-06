@@ -1,5 +1,6 @@
 class EducationsController < ApplicationController
   before_action :set_education, only: [:show, :edit, :update, :destroy]
+  before_action :authorize, except: [:index]
 
   # GET /educations
   # GET /educations.json

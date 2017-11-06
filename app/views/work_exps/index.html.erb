@@ -25,4 +25,6 @@
 
 <br>
 
-<%= link_to 'Ny', new_work_exp_path %>
+<% if current_user %>
+  <%= link_to 'Ny', new_work_exp_path %>
+<% end %>

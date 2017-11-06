@@ -1,5 +1,6 @@
 class WorkExpsController < ApplicationController
   before_action :set_work_exp, only: [:show, :edit, :update, :destroy]
+  before_action :authorize, except: [:index]
 
   # GET /work_exps
   # GET /work_exps.json

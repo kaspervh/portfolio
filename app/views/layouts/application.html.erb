@@ -34,6 +34,11 @@
             <%end%>
           </ul>
         </li>
+        <% if current_user %>
+          <li>
+            <%= link_to "log ud", logout_path%>
+          </li>
+        <%end%>
       </ul>
     </div>
 

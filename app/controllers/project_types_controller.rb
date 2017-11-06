@@ -1,5 +1,6 @@
 class ProjectTypesController < ApplicationController
   before_action :set_project_type, only: [:show, :edit, :update, :destroy]
+  before_action :authorize, except: [:show]
 
   # GET /project_types
   # GET /project_types.json

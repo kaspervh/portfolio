@@ -13,10 +13,14 @@
   <br>
   <p><%= project.description %></p>
   <br>
-  <% ProjectLink.where(project_id: project.id).each do |link|%>
+  <% @links.where(project_id: project.id).each do |link|%>
     <% if link.link != ""%>
       <%= link_to link.name, link.link %>
     <%end%>
   <%end%>
   <br>
+<%end%>
+
+<% if current_user %>
+  <%= link_to "new project", new_project_path %>
 <%end%>

@@ -1,5 +1,5 @@
-<%= form_with(model: project, local: true) do |form| %>
-  <% if project.errors.any? %>
+<%= form_with(model: @project, local: true) do |form| %>
+  <% if @project.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(project.errors.count, "error") %> prohibited this project from being saved:</h2>
 
@@ -31,18 +31,17 @@
     <%= form.text_area :description, id: :project_description, cols: '68', rows: '35' %>
   </div>
 
-    <%= form.fields_for :project_links do |builder| %>
+  <%= form.fields_for :project_links do |builder| %>
+  <strong>link navn:</strong>
+  <div class="field">
+    <%= builder.text_field :name %>
+  </div>
 
-      <strong>link navn:</strong>
-      <div class="field">
-        <%= builder.text_field :name %>
-      </div>
-
-      <strong>link addresse:</strong>
-      <div class="field">
-        <%= builder.text_field :link %>
-      </div>
-    <%end%>
+  <strong>link addresse:</strong>
+  <div class="field">
+    <%= builder.text_field :link %>
+  </div>
+<%end%>
 
   <div class="actions">
     <%= form.submit %>

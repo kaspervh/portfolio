@@ -1,0 +1,11 @@
+<%= fields_for :project_links do |builder| %>
+  <strong>link navn:</strong>
+  <div class="field">
+    <%= builder.text_field :name %>
+  </div>
+
+  <strong>link addresse:</strong>
+  <div class="field">
+    <%= builder.text_field :link %>
+  </div>
+<%end%>

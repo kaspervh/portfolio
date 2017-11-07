@@ -16,7 +16,7 @@ class ProjectsController < ApplicationController
   # GET /projects/new
   def new
     @project = Project.new
-    @project.project_links.build
+    2.times{@project.project_links.build} unless @project.project_links.count == 2
     @project_types = ProjectType.all
   end
 

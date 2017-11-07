@@ -13,10 +13,8 @@
   <br>
   <p><%= project.description %></p>
   <br>
-  <% ProjectLink.where(project_id: project.id).each do |link|%>
-    <% if link.link != ""%>
-      <%= link_to link.name, link.link %>
-    <%end%>
+  <% @links.where(project_id: project.id).each do |link|%>
+      <%= link_to link.name, link.link, style: "float: left;" %>
   <%end%>
   <br>
 <%end%>

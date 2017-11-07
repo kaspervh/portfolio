@@ -12,6 +12,7 @@ class ProjectTypesController < ApplicationController
   def show
     # pulls the project where project-type-id epuals project-type.id
     @projects = @project_type.projects
+    @links = ProjectLink.all
   end
 
   # GET /project_types/new

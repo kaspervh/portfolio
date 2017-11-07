@@ -14,9 +14,7 @@
   <p><%= project.description %></p>
   <br>
   <% @links.where(project_id: project.id).each do |link|%>
-      <br>
-      <br>
-      <%= link_to link.name, link.link, style: "float: left;" %>
+      <%= link_to link.name, link.link%>
   <%end%>
 
   <br>

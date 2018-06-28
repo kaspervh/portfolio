@@ -16,7 +16,9 @@
     <br>
   </div>
   <% @links.where(project_id: project.id).each do |link|%>
-      <%= link_to link.name, link.link style='float: left;'%>
+    <div class="linkbox" style="float: left; margin-top: 10px; width: 100%;">
+      <%= link_to link.name, link.link%>
+    </div>
   <%end%>
 
   <br>

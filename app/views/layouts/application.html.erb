@@ -25,15 +25,12 @@
         <li><%=link_to 'Om mig', home_about_me_path %></li>
         <li><%=link_to 'Arbejds erfaring', work_exps_path%></li>
         <li><%=link_to 'Uddanelse', educations_path%></li>
-        <li>
-          <ul>
-            <% project_types.each do |type| %>
-              <li>
-                <%= link_to type.name + " projekter", project_type_path(type)  %>
-              </li>
-            <%end%>
-          </ul>
-        </li>
+          <% project_types.each do |type| %>
+            <li>
+              <%= link_to type.name + " projekter", project_type_path(type)  %>
+            </li>
+          <%end%>
+
         <% if current_user %>
           <li>
             <%= link_to "log ud", logout_path%>

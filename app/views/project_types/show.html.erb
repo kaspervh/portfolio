@@ -5,18 +5,19 @@
 <br>
 
 <% @project_type.projects.each do |project| %>
-  <div class="projectbox" style='min-height: 220px; width: 100%; margin: 5px;'>
+  <div class="projectbox" style='display: flex; flex-direction: column;'>
     <strong><%= project.name %></strong>
     <br>
     <br>
-    <%= image_tag(project.image.url, style: "height: 200px; float:left")%>
-    <br>
-    <br>
-    <p><%= project.description %></p>
+    <div class="imageandtextbox" style='display: flex; justify-content: space-evenly;'>
+      <%= image_tag(project.image.url, style: "height: 200px; float:left")%>
+
+      <p><%= project.description %></p>
+    </div>
     <br>
   </div>
   <% @links.where(project_id: project.id).each do |link|%>
-    <div class="linkbox" style="float: left; margin-top: 10px; width: 100%;">
+    <div class="linkbox" style=" margin-top: 10px; width: 100%;">
       <%= link_to link.name, link.link%>
     </div>
   <%end%>

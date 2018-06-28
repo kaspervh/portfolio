@@ -16,7 +16,7 @@
     </div>
     <br>
   </div>
-  <div class="linkbox" style=" margin-top: 10px; width: 100%;">
+  <div class="linkbox" style=" margin-top: 10px; width: 100%; display: flex;">
     <% @links.where(project_id: project.id).each do |link|%>
       <%= link_to link.name, link.link%>
     <%end%>

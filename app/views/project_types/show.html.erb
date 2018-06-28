@@ -16,11 +16,10 @@
     </div>
     <br>
   </div>
-  <% @links.where(project_id: project.id).each do |link|%>
-    <div class="linkbox" style=" margin-top: 10px; width: 100%;">
+  <div class="linkbox" style=" margin-top: 10px; width: 100%;">
+    <% @links.where(project_id: project.id).each do |link|%>
       <%= link_to link.name, link.link%>
-    </div>
-  <%end%>
-
+    <%end%>
+  </div>
   <br>
 <%end%>

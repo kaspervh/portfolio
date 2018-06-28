@@ -5,14 +5,16 @@
 <br>
 
 <% @project_type.projects.each do |project| %>
-  <strong><%= project.name %></strong>
-  <br>
-  <br>
-  <%= image_tag(project.image.url, style: "height: 200px; float:left")%>
-  <br>
-  <br>
-  <p><%= project.description %></p>
-  <br>
+  <div class="projectbox">
+    <strong><%= project.name %></strong>
+    <br>
+    <br>
+    <%= image_tag(project.image.url, style: "height: 200px; float:left")%>
+    <br>
+    <br>
+    <p><%= project.description %></p>
+    <br>
+  </div>
   <% @links.where(project_id: project.id).each do |link|%>
       <%= link_to link.name, link.link%>
   <%end%>

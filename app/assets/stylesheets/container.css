@@ -1,6 +1,6 @@
 .container {
   min-height: 100vh;
-  min-width: 100vw;
+  max-width: 100%;
   display: flex;
   justify-content: center;
   background-color: orange;
@@ -115,11 +115,8 @@ td:last-of-type{
 
 
 @media screen and (max-width: 800px) {
-  .container{
-   display:hidden;
-  }
   .container-center{
-    width: 90vw;
+    width: 100vw;
   }
 
 }

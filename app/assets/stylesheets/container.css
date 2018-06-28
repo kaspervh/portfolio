@@ -116,7 +116,7 @@ td:last-of-type{
 
 @media screen and (max-width: 800px) {
   .container{
-    width: 90vw;
+    width: 0px;
   }
   .container-center{
     width: 90vw;

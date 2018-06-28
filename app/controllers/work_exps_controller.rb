@@ -5,7 +5,7 @@ class WorkExpsController < ApplicationController
   # GET /work_exps
   # GET /work_exps.json
   def index
-    @work_exps = WorkExp.order(:created_at)
+    @work_exps = WorkExp.order(:year)
   end
 
   # GET /work_exps/1

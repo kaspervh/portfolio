@@ -54,6 +54,9 @@ label{
 }
 
 @media screen and (max-width: 900px){
+  .navbar{
+    width: auto;
+  }
   .navbar ul{
       visibility: hidden;
     }
@@ -73,7 +76,7 @@ label{
 
   .navbar ul li{
     height: 50px;
-    width: 100vw;
+    width: 100%;
     background-color: #333;
   }
 

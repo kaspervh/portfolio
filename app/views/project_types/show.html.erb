@@ -5,12 +5,12 @@
 <br>
 
 <% @project_type.projects.each do |project| %>
-  <div class="projectbox" style='display: flex; flex-direction: column;'>
+  <div class="projectbox" style='display: flex; flex-direction: column; margin-top: 20px;'>
     <strong><%= project.name %></strong>
     <br>
     <br>
-    <div class="imageandtextbox" style='display: flex; justify-content: space-evenly;'>
-      <%= image_tag(project.image.url, style: "height: 200px; float:left")%>
+    <div class="imageandtextbox" style='display: flex;'>
+      <%= image_tag(project.image.url, style: "height: 200px;")%>
 
       <p><%= project.description %></p>
     </div>

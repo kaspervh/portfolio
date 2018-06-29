@@ -1,6 +1,6 @@
 .container {
   min-height: 100vh;
-  max-width: 100%;
+  max-width: 100vw;
   display: flex;
   justify-content: center;
   background-color: orange;

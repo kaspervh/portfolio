@@ -89,9 +89,17 @@ Rails.application.configure do
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
 
+   config.paperclip_defaults = {
+   storage: :s3,
+   s3_credentials: {
+   bucket: ENV.fetch('kaspervh'),
+   access_key_id: ENV.fetch('AKIAIPW36MGQKAG3W5DQ'),
+   secret_access_key: ENV.fetch('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'),
+   s3_region: ENV.fetch('eu-west-2'),
+   }
+  }
 
-
-Paperclip::Attachment.default_options[:url] = ':s3_domain_url'
+  Paperclip::Attachment.default_options[:url] = ':s3_domain_url'
 Paperclip::Attachment.default_options[:path] = ":class/:attachment/:id_partition/:style/:filename"
 Paperclip::Attachment.default_options[:s3_host_name] = 's3-us-east-2.amazonaws.com'
 end
